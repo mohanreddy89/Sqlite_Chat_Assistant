@@ -1,4 +1,4 @@
 fastapi==0.95.2
 uvicorn==0.22.0
-sqlite3==0.0.1
+db-sqlite3
 pydantic==1.10.7
