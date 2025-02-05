@@ -11,7 +11,6 @@ This project implements a chat assistant API using FastAPI and SQLite. The API a
 - [Database Schema](#database-schema)
 - [Project Structure](#project-structure)
 - Contributing
-- License
 
 ## Installation
 
