@@ -50,8 +50,9 @@ This endpoint allows users to query information about employees.
       400 Bad Request: Returns an error message if the query is invalid.
 
 **Example request:**
-   ```sh
-      curl -X 'POST' \
+    ```sh
+    
+    curl -X 'POST' \
         'http://127.0.0.1:8000/chat' \
         -H 'accept: application/json' \
         -H 'Content-Type: application/json' \
@@ -69,16 +70,18 @@ Salary (INTEGER): The salary of the employee.
 Hire_Date (TEXT): The date the employee was hired.
 
 **Project Structure:**
-chat-assistant-api/
-│
-├── database_setup.py       # Script to set up the SQLite database
-├── chat_assistant.py       # Main FastAPI application
-├── requirements.txt        # List of dependencies
-├── README.md               # Project documentation
-└── company.db              # SQLite database file (created by database_setup.py)
+   ```sh
+   chat-assistant-api/
+   │
+   ├── database_setup.py       # Script to set up the SQLite database
+   ├── chat_assistant.py       # Main FastAPI application
+   ├── requirements.txt        # List of dependencies
+   ├── README.md               # Project documentation
+   └── company.db              # SQLite database file (created by database_setup.py)
 
-**Contributing
-Contributions are welcome! Please follow these steps:**
+
+
+**Contributing: Contributions are welcome! Please follow these steps:**
 
 Fork the repository.
 Create a new branch (git checkout -b feature-branch).
