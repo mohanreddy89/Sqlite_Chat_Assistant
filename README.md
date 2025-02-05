@@ -37,27 +37,27 @@ This project implements a chat assistant API using FastAPI and SQLite. The API a
 POST /chat
 This endpoint allows users to query information about employees.
 
-```sh
-Request Body:
-
-{
-  "query": "all employees in <department>"
-}
-
-Response:
-
-200 OK: Returns a list of employee names in the specified department.
-400 Bad Request: Returns an error message if the query is invalid.
+      ```sh
+      Request Body:
+      
+      {
+        "query": "all employees in <department>"
+      }
+      
+      Response:
+      
+      200 OK: Returns a list of employee names in the specified department.
+      400 Bad Request: Returns an error message if the query is invalid.
 
 **Example request:**
-```sh
-curl -X 'POST' \
-  'http://127.0.0.1:8000/chat' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "query": "all employees in Sales"
-}'
+      ```sh
+      curl -X 'POST' \
+        'http://127.0.0.1:8000/chat' \
+        -H 'accept: application/json' \
+        -H 'Content-Type: application/json' \
+        -d '{
+        "query": "all employees in Sales"
+      }'
 
 **Database Schema:**
 The Employees table has the following schema:
