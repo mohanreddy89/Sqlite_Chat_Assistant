@@ -22,10 +22,12 @@ This project implements a chat assistant API using FastAPI and SQLite. The API a
    ```sh
    pip install -r requirements.txt
 3. **Ensure the SQLite database is set up: Run the database_setup.py script to create the company.db database and the Employees table if they do not already exist.**
+   ```sh
    python database_setup.py
 
 **Usage:**
        **1. Run the FastAPI server:**
+       ```sh
        uvicorn chat_assistant:app --reload
        **2. Access the API documentation: Open your browser and navigate to 
             http://127.0.0.1:8000/docs to view the interactive API documentation provided by 
@@ -35,6 +37,7 @@ This project implements a chat assistant API using FastAPI and SQLite. The API a
 POST /chat
 This endpoint allows users to query information about employees.
 
+```sh
 Request Body:
 
 {
@@ -47,6 +50,7 @@ Response:
 400 Bad Request: Returns an error message if the query is invalid.
 
 **Example request:**
+```sh
 curl -X 'POST' \
   'http://127.0.0.1:8000/chat' \
   -H 'accept: application/json' \
