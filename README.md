@@ -50,7 +50,7 @@ This endpoint allows users to query information about employees.
       400 Bad Request: Returns an error message if the query is invalid.
 
 **Example request:**
-      ```sh
+   ```sh
       curl -X 'POST' \
         'http://127.0.0.1:8000/chat' \
         -H 'accept: application/json' \
