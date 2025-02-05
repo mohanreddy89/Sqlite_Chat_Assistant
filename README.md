@@ -19,6 +19,7 @@ This project implements a chat assistant API using FastAPI and SQLite. The API a
    python -m venv venv
    venv\Scripts\activate  # On Windows
 2. **Install the required dependencies:**
+   ```sh
    pip install -r requirements.txt
 3. **Ensure the SQLite database is set up: Run the database_setup.py script to create the company.db database and the Employees table if they do not already exist.**
    python database_setup.py
